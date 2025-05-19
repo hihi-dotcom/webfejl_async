@@ -8,5 +8,6 @@ class Loader{
 
         const gomb1 = document.createElement('button');
         gomb1.onclick = szerviz.create();
+        manager.add(people);
     };
 };
