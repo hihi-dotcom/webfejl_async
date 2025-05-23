@@ -15,13 +15,16 @@ form.addEventListener('submit',  (e) => {
 
     fetch('http://127.0.0.1:63013/fruits', {
         method: 'POST',
-        headers: {'content-type' : 'application/json'},
+        headers: {'Content-Type' : 'application/json'},
         body: JSON.stringify(gyumolcs),
     })
     .then((response) => {
         const res_json = response.json();
 
-    });
+        res_json.then((data_obj) => {
+            console.log(data_obj);
+        });
 
+    });
 
 });
