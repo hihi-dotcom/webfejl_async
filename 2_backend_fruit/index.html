@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend - óra</title>
+</head>
+<body>
+    <form action="http://127.0.0.1:63013/pages/greet?name=<name>" method="get">
+        <label for="name">Név: </label>
+        <input type="text" id="name" name="name">
+        <br>
+        <br>
+        <button>Köszön</button>
+    </form>
+    <br>
+    <br>
+    <form action="http://127.0.0.1:63013/pages/fruits" method="post">
+        <label for="name">Név: </label>
+        <input type="text" id="name1" name="name">
+        <br>
+        <br>
+        <label for="price">Ár: </label>
+        <input type="text" id="price" name="price">
+        <br>
+        <br>
+        <button>Gyümölcs hozzáadása</button>
+    </form>
+    <br>
+    <br>
+    <form id="fruitpost">
+        <label for="name">Név: </label>
+        <input type="text" id="name2" name="name">
+        <br>
+        <br>
+        <label for="price">Ár: </label>
+        <input type="text" id="price2" name="price">
+        <br>
+        <br>
+        <button>Gyümölcs hozzáadása</button>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
